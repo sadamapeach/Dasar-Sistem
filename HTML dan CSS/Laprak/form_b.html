@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<time>HTML Form</time>
+</head>
+
+<body>
+	<h2>User Input</h2>
+	<form method="POST" autocomplete="on" action="">
+	<table>
+		<tr>
+			<td>Name</td>
+			<td>:</td>
+			<td><input type="text" name="name" pattern="[a-zA-Z ]{3,50}" size="30" maxlength="50"placeholder="Name (max 50 characters)"></td>
+		</tr>
+
+		<tr>
+			<td>Address</td>
+			<td>:</td>
+			<td><textarea name="address" rows="5" cols="30" placeholder="Address (max 100 characters)"></textarea></td>
+		</tr>
+
+		<tr>
+			<td>Gender</td>
+			<td>:</td>
+			<td>
+				<input type="radio" name="gender" value="male">Male <br/>
+				<input type="radio" name="gender" value="female">Female
+			</td>
+		</tr>
+
+		<tr>
+			<td>Email</td>
+			<td>:</td>
+			<td><input type="text" name="email" size="30" pattern="[@.a-z0-9]{6,30}" placeholder="type your email here"></td>
+		</tr>
+
+		<tr>
+			<td>City</td>
+			<td>:</td>
+			<td>
+				<input type="text" name="city" list="city" placeholder="type your city here">
+				<datalist id="city">
+					<select name="city">
+					<option value="Airport West">Airport West</option>
+					<option value="Box Hill">Box Hill</option>
+					<option value="Yarraville">Yarraville</option>
+				</select>
+				</datalist>
+			</td>
+		</tr>
+
+		<tr>
+			<td>Hobby</td>
+			<td>:</td>
+			<td>
+				<input type="checkbox" name="hobby[]" value="travelling">Travelling<br/>
+				<input type="checkbox" name="hobby[]" value="reading">Reading<br/>
+				<input type="checkbox" name="hobby[]" value="swimming">Swimming<br/>
+				<input type="checkbox" name="hobby[]" value="painting">Painting<br/>
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan="3"><br>
+				<input type="submit" name="submit" value="Submit">&nbsp;
+				<input type="reset" name="reset" value="Reset">
+			</td>
+		</tr>
+	</table>
+	</form>
+
+</body>
+</html>
